@@ -31,7 +31,7 @@ This project implements a Question Answering system using:
 
   ---
   
-## 🔹 How It Works
+## 🔹 How It Works  (***the only interesting part for reading)
   1. Context Embedding
 - The file context/prakshay.txt contains all the info about Prakshay.
 
