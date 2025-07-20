@@ -23,11 +23,11 @@ This project implements a Question Answering system using:
 ## 🔹 File Structure
 
 - ├── faiss_index               # Preprocessed files by FAISS, saved to local to avoid calculate embedding again and again
-- ├── preprocess.py           # Logic to preprocess the given knowledge pdf via FAISS and save the faiss index
-- ├── p_info.pdf            # Knowledge base to power the model
-- ├── ask_query.py          # code to start the model and take user query input, get similar embeddings from the text and print the model's response 
-- ├── requirements.txt     # List of dependencies
-- └── README.md            # You're here!
+- ├── preprocess.py             # Logic to preprocess the given knowledge pdf via FAISS and save the faiss index
+- ├── p_info.pdf                # Knowledge base to power the model
+- ├── ask_query.py              # code to start the model and take user query input, get similar embeddings from the text and print the model's response 
+- ├── requirements.txt          # List of dependencies
+- └── README.md                 # You're here!
 
   ---
   
