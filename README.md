@@ -48,7 +48,7 @@ This project implements a Question Answering system using:
 2. QA Chain Construction
 - The vector store is queried based on user questions.
 
-- Top k=2 relevant chunks are retrieved from FAISS.
+- Top k=4(Default) relevant chunks are retrieved from FAISS.
 
 - The local LLM (llama3, via Ollama) is used to answer the question using only the retrieved chunks.
 
