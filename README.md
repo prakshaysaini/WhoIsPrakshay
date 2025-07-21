@@ -35,7 +35,7 @@ This project implements a Question Answering system using:
 
   ---
   
-## 🔹 How It Works  (***the only interesting part for most reading)
+## 🔹 How It Works  (***the only interesting part for most readers)
   1. Context Embedding
 - The file context/p_info.pdf contains all the info about me/Prakshay given by myself.
 
@@ -60,6 +60,14 @@ All logic is loaded on app start — context is embedded once per run.
 ## 🔹 Sample Queries outputs
   <img width="1453" height="185" alt="image" src="https://github.com/user-attachments/assets/7d8d28c4-68ca-4eb9-9ec9-25447e11722e" />
 
+## Starting Questions
+<img width="1455" height="369" alt="image" src="https://github.com/user-attachments/assets/234d6953-d144-49e3-882e-dee4f283c404" />
+
+- Preffered model name and Mode is asked
+  
+- King Prakshay Mode just have some comeback strings, when the model is unsure
+  
+- Ignore warning as you always do.(this one is due to libraries update)
 
 # 🔹 How To Run
 ---
