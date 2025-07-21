@@ -4,6 +4,11 @@ This is a context-aware chatbot powered by LLM QA chains that understands and an
 - Built with LangChain  
 - Powered by Ollama
 
+## *Why is it worth your time
+
+- You can provide your own pdf, maybe a lecture pdf, a literature, song lyrics and much more.
+- Just run the preprocessor.py on your pdf and start ask_query.py
+- Now You can talk to model in context with your own file, boom!! now you can prepare for exams more efficiently
 
 ---
 
