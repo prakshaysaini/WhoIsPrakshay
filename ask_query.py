@@ -60,13 +60,16 @@ qa_chain = RetrievalQA.from_chain_type(
 print(f"\nAsk your question to {model_name} with ({mode}) — type 'bye' to exit:\n")
 while True:
     query = input(f"\n\n Ask: ").strip()
-    if not query or len(query.split()) <= 1:
-        print("Prakshay raises an eyebrow. Try asking something better .")
-        continue
 
     if query.lower() == "bye":
         print("Bye bye!")
         break
+
+    if not query or len(query.split()) <= 1:
+        print("Prakshay raises an eyebrow. Try asking something better .")
+        continue
+
+    
     query= query + "if you dont know just say 'I don't know'"
     try:
         result = qa_chain.invoke(query)
