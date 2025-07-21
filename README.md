@@ -1,4 +1,4 @@
-# WhoIsPrakshay
+# WhoIsPrakshay.AI
 
 This is a context-aware chatbot powered by LLM QA chains that understands and answers queries specifically about Prakshay using a local context file. It showcases how you can build a personal assistant that answers questions only from a fixed source, without relying on external internet-based searches.
 
