@@ -1,6 +1,9 @@
 # WhoIsPrakshay.AI
 
 This is a context-aware chatbot powered by LLM QA chains that understands and answers queries specifically about Prakshay using a local context file. It showcases how you can build a personal assistant that answers questions only from a fixed source, without relying on external internet-based searches.
+- Built with LangChain  
+- Powered by Ollama
+
 
 ---
 
@@ -14,26 +17,27 @@ This project implements a Question Answering system using:
 
 - Vector embeddings (via FAISS)
 
-- Contextual document (Prakshay's bio/info in .txt form)
+- Contextual document (Prakshay's bio/info in .pdf form)
 
 - The chatbot is highly focused — it doesn't hallucinate, and it answers only based on Prakshay's personal info provided in the context.
 
 ---
 
 ## 🔹 File Structure
-
-- ├── faiss_index               # Preprocessed files by FAISS, saved to local to avoid calculate embedding again and again
-- ├── preprocess.py             # Logic to preprocess the given knowledge pdf via FAISS and save the faiss index
-- ├── p_info.pdf                # Knowledge base to power the model
-- ├── ask_query.py              # code to start the model and take user query input, get similar embeddings from the text and print the model's response 
-- ├── requirements.txt          # List of dependencies
-- └── README.md                 # You're here!
+```
+├── faiss_index/             # Preprocessed FAISS files to avoid recomputation
+├── preprocess.py            # Parses and indexes the knowledge base using FAISS
+├── p_info.pdf               # Knowledge base for the chatbot
+├── ask_query.py             # Main script to handle user queries
+├── requirements.txt         # List of dependencies
+└── README.md                # You're here!
+```
 
   ---
   
-## 🔹 How It Works  (***the only interesting part for reading)
+## 🔹 How It Works  (***the only interesting part for most reading)
   1. Context Embedding
-- The file context/prakshay.txt contains all the info about Prakshay.
+- The file context/p_info.pdf contains all the info about me/Prakshay given by myself.
 
 - It is split into chunks using LangChain's CharacterTextSplitter.
 
@@ -76,7 +80,7 @@ Choose your OS (Windows, macOS, Linux) and follow the installation instructions.
 
 ```
 
-ollama pull llama3.1:8b          <(deepseek-r1:1.5b and deepseek-r1:8b used in this bot)>
+ollama pull llama3.1:8b          <(deepseek-r1:1.5b and deepseek-r1:8b also used in this bot)>
 ```
 You can also pull other models like `mistral`, `gemma`, or `llama2`.But then change the code according to the downloaded LLM
 
